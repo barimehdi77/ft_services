@@ -12,7 +12,7 @@ RUN mv /tmp/default.conf /etc/nginx/conf.d/
 RUN openrc
 RUN touch /run/openrc/softlevel
 
-RUN sh tmp/wp-setup.sh
+RUN sh tmp/php-setup.sh
 ADD src/run.sh .
 RUN chmod +x /run.sh
 
